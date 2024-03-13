@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F2F5F9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lato, sans-serif;
+    color: #111729;
+}
+
+.card {
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 30%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+}
+
+.banner{
+    height: 50%;
+}
+
+.hero{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+svg {
+    position: absolute;
+    z-index: 99;
+    transform: translateY(-90%);
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    font-family: poppins, sans-serif;
+}
+
+.card p {
+    font-size: 1.6rem;
+    color: #677489;
+}
+
+.details{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info{
+    padding: 1em;
+    display: flex;
+}
+
+.avatar{
+    height: 10%;    
+    width: 10%;   
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.info ul{
+    padding: 0.5em;
+    list-style: none;
+}
+
+.info ul li:nth-child(1){
+    font-weight: 600;
+    font-size: 16px;
+}
+.info ul li:nth-child(2){
+    font-size: 1.2em;
+    color: #677489;
+}
+
+@media (width<680px) {
+    .card {
+        height: 65%;
+        width: 70%;
+        border-radius: 1.5rem;
+    }
+}
